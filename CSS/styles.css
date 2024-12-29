@@ -2,33 +2,88 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    list-style-type: none;
+}
+
+:root{
+    --cor-bor1: 5px solid red;
+    --cor-bor2: 5px solid blue;
+    --cor-bor3: 5px solid orange;
 }
 
 #painel{
     height: 100vh;
     width: 100vw;
 
-    border: 5px solid red;
+    border: var(--cor-bor1);
 }
 
 /*nav*/
 nav{
     height: 10%;
 
-    border: 2px solid orange;
+    border: var(--cor-bor3);
 }
 /*fim-nav*/
 /*main*/
 main{
     height: 75%;
 }
+
+.logo{
+    border: var(--cor-bor2);
+    padding: 2rem 0;
+
+    display: flex;
+    justify-content: center;
+
+    font-size: 4rem;
+}
+
+.logo>p:nth-child(1), .logo>p:nth-child(4){
+    color: blue;
+}
+
+.logo>p:nth-child(2),.logo>p:nth-child(6){
+    color: red;
+}
+
+.logo>p:nth-child(3){
+    color: yellow;
+}
+
+.logo>p:nth-child(5){
+    color: green;   
+}
+
+.pesquisa{
+    border: var(--cor-bor3);
+
+    gap: 40px;
+}
+
+.pesquisa__textbox, .pesquisa__botoes{
+    display: flex;
+    justify-content: center;
+}
 /*fim-main*/
 /*footer*/
 footer{
     height: 15%;
 
-    border: 2px solid blue;
+    border: var(--cor-bor2);
 }
+
+.rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    gap: 20px;
+}
+
 /*fim-footer*/
 /**/
 /**/
