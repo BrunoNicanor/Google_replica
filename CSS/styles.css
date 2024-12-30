@@ -62,7 +62,8 @@ nav{
 }
 
 .img{
-    background-color: white;
+    background: url(/image/foto.jpg);
+    background-size: contain;
     border-radius: 50%;
 
     border-top: 2px solid red;
@@ -123,23 +124,35 @@ main{
 .pesquisa__textbox, .pesquisa__botoes{
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .pesquisa__textbox{
     /*border: 1px solid grey;*/
 
     height: 3rem;
-    width: 40vw;
+    width: 45vw;
 
     margin: 0 auto;
+    padding: 0 1em;
+    gap: 10px;
 
     border-radius: 50px;
 
     box-shadow: 1px 1px 10px 1px rgb(197, 196, 196);
 }
 
+.pesquisa img{
+    background-size: contain;
+    width: auto;
+    height: 50%;
+
+    /*border: var(--cor-bor1);*/
+}
+
 .pesquisa__textbox > input{
     width: 80%;
+    height: 100%;
     border: 0;
 }
 
@@ -163,12 +176,12 @@ footer{
     background-color: rgb(245, 243, 243);
 
     /*border: var(--cor-bor2);*/
-
-    padding: 0 1.5em;
 }
 
 .pais{
     border-bottom: 1px solid rgb(196, 195, 195);
+
+    padding: 0 1.5em;
 }
 
 footer p{
@@ -179,7 +192,7 @@ footer p{
     display: flex;
     justify-content: space-between;
     
-    padding: 0.5em 1em;
+    padding: 0.5em 2em;
 }
 
 ul{
