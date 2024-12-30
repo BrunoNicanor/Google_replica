@@ -94,20 +94,20 @@ main{
 }
 
 .logo>p:nth-child(1), .logo>p:nth-child(4){
-    color: blue;
+    color: #3488ff;
     
 }
 
 .logo>p:nth-child(2),.logo>p:nth-child(6){
-    color: red;
+    color: #ff3322;
 }
 
 .logo>p:nth-child(3){
-    color: yellow;
+    color: #ffbb01;
 }
 
 .logo>p:nth-child(5){
-    color: green;   
+    color: #00ac44;   
 }
 
 .pesquisa{
@@ -154,6 +154,9 @@ main{
     width: 80%;
     height: 100%;
     border: 0;
+
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
 }
 
 .pesquisa__botoes{
@@ -202,5 +205,25 @@ ul{
 
 /*fim-footer*/
 /**/
+a:hover, footer li:hover{
+    text-decoration: underline;
+}
+
+#apps:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+#apps:hover, .img:hover,
+.pesquisa__textbox img:nth-child(3),
+.pesquisa__textbox img:nth-child(4),
+.pesquisa__textbox img:nth-child(5),
+.pesquisa__botoes button{
+    cursor: pointer;
+}
+
+.pesquisa__textbox input:focus{
+    border: 0;
+    outline: 0;
+}
 /**/
 /**/
