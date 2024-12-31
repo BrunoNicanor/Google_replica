@@ -17,12 +17,6 @@ html{
     width: 100%;
 }
 
-:root{
-    --cor-bor1: 5px solid red;
-    --cor-bor2: 5px solid blue;
-    --cor-bor3: 5px solid orange;
-}
-
 #painel{
     height: 100vh;
     width: 100vw;
@@ -31,7 +25,6 @@ html{
     flex-direction: column;
 
     justify-content: space-between;
-    /*border: var(--cor-bor1);*/
 }
 
 /*nav*/
@@ -44,8 +37,6 @@ nav{
 
     gap: 1em;
     padding-right: 1em;
-    
-    /*border: var(--cor-bor3);*/
 }
 
 #apps, .img{
@@ -91,7 +82,6 @@ main{
 }
 
 .logo{
-    /*border: var(--cor-bor2);*/
     padding: 2rem 0;
 
     display: flex;
@@ -123,8 +113,6 @@ main{
 }
 
 .pesquisa{
-    /*border: var(--cor-bor3);*/
-
     height: 25%;
     width: 100%;
 
@@ -141,7 +129,6 @@ main{
 }
 
 .pesquisa__textbox{
-    /*border: 1px solid grey;*/
 
     height: 3rem;
     width: 45vw;
@@ -159,8 +146,6 @@ main{
     background-size: contain;
     width: auto;
     height: 50%;
-
-    /*border: var(--cor-bor1);*/
 }
 
 .pesquisa__textbox > input{
@@ -195,8 +180,6 @@ main{
 footer{
     height: 15%;
     background-color: rgb(245, 243, 243);
-
-    /*border: var(--cor-bor2);*/
 }
 
 .pais{
